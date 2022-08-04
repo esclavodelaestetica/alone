@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALONE</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="icon" type="image/png" href="../IMG/favicon.png">
+</head>
+
+
+<body>
+    <img src="../IMG/FullScreen.svg" class="fullscreen" id="fullscreen" onclick="toggleFullScreen()">
+    <a href="#" onclick="saltarIntro()" class="saltar_intro" id="saltar_intro">Saltar Introducción</a>
+    <audio src="../AUDIO/Timbre.mp3" id="timbre"></audio>
+    <audio src="" id="audio1"></audio>
+    <audio src="" id="audio2"></audio>
+    <div class="black" id="black">
+    </div>
+    <div class="context">
+        <p class="recomend">SE RECOMIENDA JUGAR CON EL VOLUMEN ACTIVADO</p>
+        <h1 class="spectrace">SPECTRACE</h1>
+        <h2 class="presenta">PRESENTA</h2>
+        <h2 class="sitio">MIAMI, FLORIDA</h2>
+        <h2 class="año">1998</h2>
+    </div>
+    <div class="div_joc" id="divJoc">
+        <div id="vida" class="vida">
+        </div>
+        <div class="pantallaAlone">
+            <img src="../IMG/Alone.svg">
+        </div>
+        <img src="../IMG/Menu.svg" class="opciones" id="opciones" onclick="menuOpcions()">
+        <div class="abrirMenu" id="abrirMenu">
+            <a href="../index.html" class="respuesta">
+                VOLVER AL MENÚ
+            </a>
+        </div>
+        <div class="pregunta" id="pregunta">
+            <a href="#" onclick="empezar()" id="intro" class="respuesta">ENTRAS EN CLASE</a>
+        </div>
+
+        <div class="inventario" id="inventario"></div>
+        <div class="inventario" id="mochila"></div>
+        <div class="divDia" id="divDia"></div>
+        <div class="arenasMovedizas" id="arenasMovedizas"></div>
+        <div class="opacidad" id="error2">
+            <p class="texto_contenedor">
+                No te caben más de 5 objetos en la mochila.
+            </p>
+            <a href="#" class="respuesta" onclick="ok()">
+                OK
+            </a>
+        </div>
+        <div class="opacidad" id="error3">
+            <p class="texto_contenedor">
+                Has cogido menos de 5 objetos, quieres continuar?
+            </p>
+            <div class="respuesta_contenedor">
+                <a href="#" class="respuesta" onclick="menos5obj()">
+                    SI
+                </a>
+                <a href="#" class="respuesta" onclick="ok()">
+                    NO
+                </a>
+            </div>
+        </div>
+        <div class="sistemaCaza" id="sistemaCaza">
+        </div>
+        <div class="opacidad" id="error4">
+            <p class="texto_contenedor">
+                No tienes el objeto necesario.
+            </p>
+            <a href="#" class="respuesta" onclick="okObjeto()">
+                OK
+            </a>
+        </div>
+        <div class="opacidad" id="error5">
+            <p class="texto_contenedor">
+                Este objeto no tiene utilidad en este momento.
+            </p>
+            <a href="#" class="respuesta" onclick="ok()">
+                OK
+            </a>
+        </div>
+        <div class="opacidad" id="error6">
+            <p class="texto_contenedor">
+                No tienes comida en el inventario en este momento.
+            </p>
+            <a href="#" class="respuesta" onclick="okComida()">
+                OK
+            </a>
+        </div>
+        <div class="carta" id="carta"></div>
+        <div class="muerte" id="muerte"></div>
+    </div>
+    <script src="../JS/Script.js"></script>
+    <script src="../JS/JSON.js"></script>
+</body>
+
+</html>

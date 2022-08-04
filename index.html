@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALONE | Inicio</title>
+    <link rel="stylesheet" href="CSS/StyleMenu.css">
+    <script src="JS/Script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="icon" type="image/png" href="IMG/favicon.png">
+</head>
+
+<body>
+    <section class="fondoMenu">
+        <img src="IMG/FullScreen.svg" class="fullscreen" id="fullscreen" onclick="toggleFullScreen()">
+        <div class="flex_menu" id="carga">
+            <audio id="audio_menu" src="AUDIO/Menu.mp3"></audio>
+            <img src="IMG/Logo%20Esbozos.svg" class="logo">
+            <img src="IMG/Alone.svg" class="logoalone">
+            <div class="containerMenu">
+                <a href="#" onclick="menu()" class="respuesta">MENÚ</a>
+            </div>
+        </div>
+
+        <div class="flex_menu" id="menu">
+            <img src="IMG/Alone.svg" class="alone">
+            <div class="opcions">
+                <a href="HTML/juego.html">NUEVA PARTIDA</a>
+                <a href="#" onclick="instrucciones()">INSTRUCCIONES</a>
+                <a href="#" onclick="arte()">ARTE</a>
+                <a href="#" onclick="creditos()">CRÉDITOS</a>
+            </div>
+        </div>
+
+        <!-- instrucciones -->
+        <div id="flexInstrucciones" class="flexInstrucciones">
+            <div class="tornar" onclick="tornarMenu()">
+                <img src="IMG/bototornar-01.svg" class="botoTornar">
+            </div>
+            <div class="tituloInstrucciones">Instrucciones</div>
+
+            <div class="textoInstrucciones">
+                Alone es un juego de supervivencia en el cual tienes que ir tomando decisiones a medida que se te presentan situaciones. En cada situación siempre tendrás que elegir una opción, sino no podrás avanzar en la trama. Para seleccionar un objeto o opción haz un click, para deseleccionar solo tienes que volver a dar click. <br><br>
+
+                Se puede empezar el juego con 5 o menos objetos, es recomendable escoger 5 sino la supervivencia del personaje se dificultará más. <br><br>
+
+                El personaje tiene 100 puntos de vida. Por cada situación peligrosa en la que salga herido se le restarán puntos de vida. La comida te sube vida, si el personaje no consigue comida en la opción de comer se le restarán puntos y por cada situación peligrosa y hiriente le bajara mucho más la vida.
+            </div>
+
+        </div>
+
+
+        <!-- ilustraciones escritorio-->
+        <div id="cuadrado" class="cuadrado">
+            <div class="sliderGrid">
+
+                <div class="tornar" onclick="tornarMenu()">
+                    <img src="IMG/bototornar-01.svg" class="botoTornar">
+                </div>
+
+                <div class="fletxesGrid">
+                    <div class="gridBotones">
+
+                        <a id="fl-drt" class="fletxa-drt" onclick="moureGrid(100)">
+                            <img src="IMG/sliderr-01.svg" class="boton">
+                        </a>
+
+                        <a id="fl-esq" class="fletxa-esq" onclick="moureGrid(-100)">
+                            <img src="IMG/sliderr-02.svg" class="boton">
+                        </a>
+
+                    </div>
+                </div>
+                <div id="contenidorGrid" class="contenidorGrid">
+
+                    <div id="grid" class="griduno">
+                        <div onclick="moureSliderD(0)" class="a container" id="container">
+                            <div class="hover">BARRANCO<br>Andrea Gómez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-100)" class="b container" id="container">
+                            <div class="hover">BOTELLA CUEVA<br>Andrea Gómez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-200)" class="c container" id="container">
+                            <div class="hover">VISTAS MAR CERCA<br>Andrea Gómez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-300)" class="d container" id="container">
+                            <div class="hover">VISTAS MAR LEJOS<br>Andrea Gómez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-400)" class="e container" id="container">
+                            <div class="hover">VISTAS NOCHE<br>Andrea Gómez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-500)" class="f container" id="container">
+                            <div class="hover">PRECIPICIO<br>Andrea Gómez
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="grid" class="griddos">
+                        <div onclick="moureSliderD(-600)" class="g container" id="container">
+                            <div class="hover">AMANECER<br>Enric Ramírez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-700)" class="h container" id="container">
+                            <div class="hover">ATARDECER<br>Enric Ramírez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-800)" class="i container" id="container">
+                            <div class="hover">LLUVIA<br>Enric Ramírez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-900)" class="j container" id="container">
+                            <div class="hover">CIERVO<br>Enric Ramírez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1000)" class="k container" id="container">
+                            <div class="hover">HELICÓPTERO<br>Enric Ramírez
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1100)" class="l container" id="container">
+                            <div class="hover">OSO<br>Enric Ramírez
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="grid" class="gridtres">
+                        <div onclick="moureSliderD(-1200)" class="m container" id="container">
+                            <div class="hover">CHRIS<br>Aleksandra Kurland
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1300)" class="n container" id="container">
+                            <div class="hover">BARCA DÍA<br>Aleksandra Kurland
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1400)" class="o container" id="container">
+                            <div class="hover">BARCA NOCHE<br>Aleksandra Kurland
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1500)" class="p container" id="container">
+                            <div class="hover">PLAYA<br>Aleksandra Kurland
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1600)" class="q container" id="container">
+                            <div class="hover">ENTRADA PLAYA<br>Aleksandra Kurland
+                            </div>
+                        </div>
+                        <div onclick="moureSliderD(-1700)" class="r container" id="container">
+                            <div class="hover">RANA Y SETA<br>Aleksandra Kurland
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slider ilustraciones -->
+        <div id="dibujos" class="dibujos">
+
+            <div id="cruz">
+                <a onclick="cruzSlider()">
+                    <img src="IMG/MenuCerrar.svg">
+                </a>
+            </div>
+
+            <div class="fletxesGrid">
+                <div class="gridBotones">
+
+                    <a id="fl-drt" class="fletxa-drt" onclick="moureSlider(100)">
+                        <img src="IMG/sliderr-01.svg" class="boton">
+                    </a>
+
+                    <a id="fl-esq" class="fletxa-esq" onclick="moureSlider(-100)">
+                        <img src="IMG/sliderr-02.svg" class="boton">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="slider">
+                <div id="cImg" class="contenidorImg">
+                    <div id="contenidor" class="landscapeImg1">
+                        <a href="IMG/barranco.png" class="dowload" download="Barranco" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg2">
+                        <a href="IMG/botella.png" class="dowload" download="Botella en la cueva" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg3">
+                        <a href="IMG/cercaplaya.png" class="dowload" download="Vistas cercanas del mar" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg4">
+                        <a href="IMG/diaplaya.png" class="dowload" download="Vistas lejanas del mar" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg5">
+                        <a href="IMG/nocheplaya.png" class="dowload" download="Vistas de noche" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg6">
+                        <a href="IMG/precipicio.png" class="dowload" download="Precipicio" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg7">
+                        <a href="IMG/amanecer.svg" class="dowload" download="Amanecer" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg8">
+                        <a href="IMG/atardecer.svg" class="dowload" download="Atardecer" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg9">
+                        <a href="IMG/oso.png" class="dowload" download="Lluvia" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg10">
+                        <a href="IMG/ciervo.svg" class="dowload" download="Ciervo" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg11">
+                        <a href="IMG/helicoptero.png" class="dowload" download="Helicóptero" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg12">
+                        <a href="IMG/lluvia.svg" class="dowload" download="Oso" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg13">
+                        <a href="IMG/chris.jpg" class="dowload" download="Chris" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg14">
+                        <a href="IMG/sos.jpg" class="dowload" download="Barca en la playa de día" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg15">
+                        <a href="IMG/playabarca.jpg" class="dowload" download="Barca en la playa de noche" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg16">
+                        <a href="IMG/playa.jpg" class="dowload" download="Playa" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg17">
+                        <a href="IMG/entradaplaya.jpg" class="dowload" download="Entrada a la playa" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+                    <div id="contenidor" class="landscapeImg18">
+                        <a href="IMG/ranaseta.jpg" class="dowload" download="Rana y seta" onclick="descargar()">
+                            DESCARGAR
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- creditos -->
+        <div id="flexCreditos" class="flexCreditos">
+
+            <div class="tornar" onclick="tornarMenu()">
+                <img src="IMG/bototornar-01.svg" class="botoTornar">
+            </div>
+            <div>
+                <img src="IMG/Logo%20Esbozos.svg" class="logoCreditos">
+
+            </div>
+
+            <div class="divCreditos">
+                <div class="gridCreditos">
+                    <div class="uno">
+                        <div class="seccion">
+                            <h1>Programación</h1>
+                        </div>
+                    </div>
+                    <div class="dos">
+                        <div class="nom">
+                            Enric Ramírez <br>
+                            Andrea Gómez <br>
+                            Aleksandra Kurland
+                        </div>
+                    </div>
+                    <div class="tres">
+                        <div class="seccion">
+                            <h1>Ilustraciones</h1>
+                        </div>
+                    </div>
+                    <div class="cuatro">
+                        <div class="nom">
+                            Enric Ramírez <br>
+                            Andrea Gómez <br>
+                            Aleksandra Kurland
+                        </div>
+                    </div>
+                    <div class="cinco">
+                        <div class="seccion">
+                            <h1>Guión</h1>
+                        </div>
+                    </div>
+                    <div class="seis">
+                        <div class="nom">
+                            Aleksandra Kurland<br>
+                            Enric Ramírez
+                        </div>
+                    </div>
+                    <div class="siete">
+                        <div class="seccion">
+                            <h1>Música y sonido</h1>
+                        </div>
+                    </div>
+                    <div class="ocho">
+                        <div class="nom">
+                            Matías Cubillos <br>
+                            Firewatch<br>
+                            The Last of Us<br>
+                            Cry of Fear<br>
+                            Life is Strange
+                        </div>
+                    </div>
+                    <div class="nueve">
+                        <div class="seccion">
+                            <h1>Ilustración menú</h1>
+                        </div>
+                    </div>
+                    <div class="diez">
+                        <div class="seis">
+                            <div class="nom">
+                                Mikael Gustafsson
+                            </div>
+                        </div>
+                    </div>
+                    <div class="once">
+                        <div class="seccion">
+                            <h1>Agradecimientos</h1>
+                        </div>
+                    </div>
+                    <div class="doce">
+                        <div class="nom">
+                            Pep Santacruz <br>
+                            Adam Fabra <br>
+                            Dani Uzquiano
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body></html>

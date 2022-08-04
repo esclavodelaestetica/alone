@@ -1,0 +1,857 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Verlag-XLight";
+}
+
+@font-face {
+    font-family: 'Verlag Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Verlag Book'), url('Verlag-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Verlag Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Verlag Light'), url('Verlag Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Verlag-XLight";
+    src: url("Verlag-XLight.eot");
+    src: url("Verlag-XLight.eot?#iefix") format("embedded-opentype"),
+        url("Verlag-XLight.woff2") format("woff2"),
+        url("Verlag-XLight.woff") format("woff"),
+        url("Verlag-XLight.ttf") format("truetype"),
+        url("Verlag-XLight.svg#Verlag-XLight") format("svg");
+}
+
+.fondoMenu {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../IMG/menu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-color: #000;
+}
+
+#menu {
+    display: none;
+}
+
+.respuesta {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #fff;
+    padding: 10px 25px 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 1em;
+    font-family: 'Verlag Light';
+    letter-spacing: 1px;
+}
+
+.respuesta:hover {
+    background-color: #FDF38A;
+    border: 1px solid #FDF38A !important;
+    text-decoration: none;
+    color: black !important;
+}
+
+.fullscreen {
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.logo {
+    width: 13em;
+}
+
+.logoalone {
+    width: 16em;
+    margin: 3em 0em 4em 0em;
+}
+
+.flex_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.opcions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcions a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1.5em;
+    font-size: 20px;
+}
+
+.opcions a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.opcions a:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.alone {
+    width: 26em;
+    margin: 6em 0em;
+}
+
+/* css Andrea */
+
+header,
+.landscapeImg1,
+.landscapeImg2,
+.landscapeImg3,
+.landscapeImg4,
+.landscapeImg5,
+.landscapeImg6,
+.landscapeImg7,
+.landscapeImg8,
+.landscapeImg9,
+.landscapeImg10,
+.landscapeImg11,
+.landscapeImg12,
+.landscapeImg13,
+.landscapeImg14,
+.landscapeImg15,
+.landscapeImg16,
+.landscapeImg17,
+.landscapeImg18 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+}
+
+.landscapeImg1 {
+    background-image: url(../img/barranco.png);
+}
+
+.landscapeImg2 {
+    background-image: url(../img/botella.png);
+}
+
+.landscapeImg3 {
+    background-image: url(../img/cercaplaya.png);
+}
+
+.landscapeImg4 {
+    background-image: url(../img/diaplaya.png);
+}
+
+.landscapeImg5 {
+    background-image: url(../img/nocheplaya.png);
+}
+
+.landscapeImg6 {
+    background-image: url(../img/precipicio.png);
+}
+
+.landscapeImg7 {
+    background-image: url(../IMG/amanecer.jpg);
+}
+
+.landscapeImg8 {
+    background-image: url(../IMG/atardecer.jpg);
+}
+
+.landscapeImg9 {
+    background-image: url(../IMG/lluvia.jpg);
+}
+
+.landscapeImg10 {
+    background-image: url(../IMG/ciervo.jpg);
+}
+
+.landscapeImg11 {
+    background-image: url(../IMG/helicoptero.jpg);
+}
+
+.landscapeImg12 {
+    background-image: url(../IMG/oso.jpg);
+}
+
+.landscapeImg13 {
+    background-image: url(../IMG/chris.jpg);
+}
+
+.landscapeImg14 {
+    background-image: url(../IMG/sos.jpg);
+}
+
+.landscapeImg15 {
+    background-image: url(../IMG/playabarca.jpg);
+}
+
+.landscapeImg16 {
+    background-image: url(../IMG/playa.jpg);
+}
+
+.landscapeImg17 {
+    background-image: url(../IMG/entradaplaya.jpg);
+}
+
+.landscapeImg18 {
+    background-image: url(../IMG/ranaseta.jpg);
+}
+
+.contenidorImg {
+    display: flex;
+    width: 1800vw;
+    position: relative;
+    left: 0;
+    transition: 1s;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+.fletxesGrid {
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    margin-top: 47vh;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.dowload {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #fff;
+    padding: 10px 25px 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 150px;
+    margin: 5em;
+    font-family: 'Verlag Light';
+    letter-spacing: 1px;
+}
+
+.dowload:hover {
+    background-color: #FDF38A;
+    border: 1px solid #FDF38A !important;
+    text-decoration: none;
+    color: black !important;
+}
+
+.boton {
+    width: 50px;
+    display: flex;
+}
+
+.gridBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 200px;
+}
+
+.landscapeImg1,
+.landscapeImg2,
+.landscapeImg3,
+.landscapeImg4,
+.landscapeImg5,
+.landscapeImg6,
+.landscapeImg7,
+.landscapeImg8,
+.landscapeImg9,
+.landscapeImg10,
+.landscapeImg11,
+.landscapeImg12:hover .caption {
+    opacity: 1;
+}
+
+.caption {
+    padding: 200px 50px 50px 50px;
+    opacity: 0;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    transition: opacity 1s;
+}
+
+#contenidor:hover .caption {
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.griduno {
+    display: grid;
+    grid-template-areas: "A B C""D E F";
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    width: 100vw;
+    margin: 5vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.a {
+    grid-area: A;
+    background-image: url(../IMG/barranco.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.b {
+    grid-area: B;
+    background-image: url(../IMG/botella.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.c {
+    grid-area: C;
+    background-image: url(../IMG/cercaplaya.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.d {
+    grid-area: D;
+    background-image: url(../IMG/diaplaya.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.e {
+    grid-area: E;
+    background-image: url(../IMG/nocheplayaMobile.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.f {
+    grid-area: F;
+    background-image: url(../IMG/precipicio.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.g {
+    grid-area: G;
+    background-image: url(../IMG/amanecer.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.h {
+    grid-area: H;
+    background-image: url(../IMG/atardecer.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.i {
+    grid-area: I;
+    background-image: url(../IMG/lluvia.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.j {
+    grid-area: J;
+    background-image: url(../IMG/ciervo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.k {
+    grid-area: K;
+    background-image: url(../IMG/helicoptero.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.l {
+    grid-area: L;
+    background-image: url(../IMG/oso.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.m {
+    grid-area: M;
+    background-image: url(../IMG/chris.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.n {
+    grid-area: N;
+    background-image: url(../IMG/sos.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.o {
+    grid-area: O;
+    background-image: url(../IMG/playabarca.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.p {
+    grid-area: P;
+    background-image: url(../IMG/playa.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.q {
+    grid-area: Q;
+    background-image: url(../IMG/entradaplaya.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.r {
+    grid-area: R;
+    background-image: url(../IMG/ranaseta.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+#dibujos {
+    display: none;
+}
+
+#cruz {
+    z-index: 1;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+}
+
+.griddos {
+    display: grid;
+    grid-template-areas: "G H I""J K L";
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    width: 100vw;
+    margin: 5vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenidorGrid {
+    display: flex;
+    width: 300vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10fr;
+}
+
+.fletxa-drt {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.botoTornar {
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#cuadrado {
+    display: none;
+}
+
+h2 {
+    font-family: "Verlag-XLight";
+    font-size: 30px;
+    color: white;
+}
+
+p,
+a {
+    font-family: "Verlag-XLight";
+    font-size: 25px;
+    color: white;
+}
+
+.cuadrado {
+    overflow: hidden;
+}
+
+
+
+.opcionGaleria {
+    display: none;
+}
+
+/* barra scroll agraiments */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(201, 76, 76, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: white;
+}
+
+.divCreditos {
+    height: 500px;
+    width: 700px;
+    border: 0px solid #ddd;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.instrucciones {
+    display: none;
+}
+
+.flexInstrucciones {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tituloInstrucciones {
+    font-size: 80px;
+    font-family: 'Verlag-Xlight';
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 1rem;
+}
+
+.textoInstrucciones {
+    width: 35vw;
+    margin: 10px;
+    font-size: 22px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.tornar {
+    width: 100%;
+}
+
+.flexCreditos {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.logoCreditos {
+    width: 13em;
+    margin: 2em;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    font-size: 15px;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+}
+
+.nom {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+}
+
+.arte {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.gridCreditos {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10fr 10fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-template-areas: "uno dos""tres cuatro""cinco seis""siete ocho""nueve diez""once doce";
+}
+
+.gridtres {
+    display: grid;
+    grid-template-areas: "M N O""P Q R";
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    width: 100vw;
+    margin: 5vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.hover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: flex-end;
+    padding: 30px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.container:hover .hover {
+    opacity: 1;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+
+    .fullscreen {
+        font-size: 15px;
+    }
+
+    .alone {
+        width: 20em;
+        margin: 5em 0em;
+    }
+
+    .opcions a {
+        color: #fff;
+        text-decoration: none;
+        margin: 1.5em;
+        font-size: 18px;
+    }
+
+    .cuadrado {
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .griduno {
+        grid-template-areas: "A B""C D""E F";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .griddos {
+        grid-template-areas: "G H""I J""K L";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridtres {
+        grid-template-areas: "M N""O P""Q R";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #container {
+        margin: 10px;
+
+    }
+
+
+
+
+    .landscapeImg1 {
+        background-image: url(../IMG/barrancoMobile.png);
+    }
+
+    .landscapeImg2 {
+        background-image: url(../IMG/botellaMobile.png);
+    }
+
+    .landscapeImg3 {
+        background-image: url(../IMG/cercaplayaMobile.png);
+    }
+
+    .landscapeImg4 {
+        background-image: url(../IMG/diaplayaMobile.png);
+    }
+
+    .landscapeImg5 {
+        background-image: url(../IMG/nocheplayaMobile.png);
+    }
+
+    .landscapeImg6 {
+        background-image: url(../IMG/precipicioMobile.png);
+    }
+
+    .landscapeImg7 {
+        background-image: url(../IMG/amanecerMobile.jpg);
+    }
+
+    .landscapeImg8 {
+        background-image: url(../IMG/atardecerMobile.jpg);
+    }
+
+    .landscapeImg9 {
+        background-image: url(../IMG/lluviaMobile.jpg);
+    }
+
+    .landscapeImg10 {
+        background-image: url(../IMG/ciervoMobile.jpg);
+    }
+
+    .landscapeImg11 {
+        background-image: url(../IMG/helicopteroMobile.jpg);
+    }
+
+    .landscapeImg12 {
+        background-image: url(../IMG/osoMobile.jpg);
+    }
+
+    .landscapeImg13 {
+        background-image: url(../IMG/chrisMobile.jpg);
+    }
+
+    .landscapeImg14 {
+        background-image: url(../IMG/sosMobile.jpg);
+    }
+
+    .landscapeImg15 {
+        background-image: url(../IMG/playabarcaMobile.jpg);
+    }
+
+    .landscapeImg16 {
+        background-image: url(../IMG/playaMobile.jpg);
+    }
+
+    .landscapeImg17 {
+        background-image: url(../IMG/entradaplayaMobile.jpg);
+    }
+
+    .landscapeImg18 {
+        background-image: url(../IMG/ranasetaMobile.jpg);
+    }
+
+    .tituloInstrucciones {
+        font-size: 60px
+    }
+
+    .textoInstrucciones {
+        width: 60vw;
+        height: 70vh;
+        font-size: 18px;
+    }
+
+    .logoCreditos {
+        width: 10em;
+        margin: 40px;
+    }
+
+    .divCreditos {
+        width: 80vw;
+        height: 40%;
+    }
+
+    .gridCreditos {
+        width: 80%;
+        margin: 20px;
+        margin-bottom: 20px;
+        grid-column-gap: auto;
+    }
+
+    .seccion {
+        color: white;
+        font-size: 13px;
+        text-align: left;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+    }
+    
+    .nom {
+    font-size: 18px;
+}
+
+    .dowload {
+        font-size: 14px;
+        padding: 10px 25px 8px 25px;
+    }
+
+    .hover {
+        padding: 10px;
+    }
+}
+
+
